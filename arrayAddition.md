@@ -10,7 +10,7 @@ Using the JavaScript language, have the function ArrayAdditionI(arr) take the ar
 <code>function ArrayAddition(arr) {
   const biggestNumber = arr.sort((a,b) => a - b)[arr.length-1];
   const restElements = arr.splice(0, arr.length - 1);
-    
+  <br>  
   return restElements.reduce((acc, item) => acc + item, 0) === biggestNumber;
 }
 <br><br>
