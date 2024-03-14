@@ -8,9 +8,9 @@ Have the function <code>FirstFactorial(num)</code> take the <code>num</code> par
 <summary>Solution</summary>
 <br>
 <code>function FirstFactorial(num) {
-	return num === 1 ? 1 : num * FirstFactorial(num - 1);
+  return num === 1 ? 1 : num * FirstFactorial(num - 1);
 }</code>
-
+<br><br>
 <code>console.log(FirstFactorial(8));</code>
 </details>
 
