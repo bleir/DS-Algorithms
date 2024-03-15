@@ -6,14 +6,13 @@ Given an input string, write a function that returns a compressed version of the
 
 <details>
 <summary>Solution</summary>
-<br>
-<style type="text/javascript">
+  
+```
 function runLength(str) {
   let result = '';
   let count = 1;
-  </code>
-  
-  <code>for(let i = 0; i < str.length; i++) {
+
+  for(let i = 0; i < str.length; i++) {
     if(str[i] === str[i+1]) {
       count++;
     } else {
@@ -23,12 +22,16 @@ function runLength(str) {
   }
   
   return result;
-}</style>
+}
 
-<code>console.log(runLength('mmmmaa'))</code>
+console.log(runLength('mmmmaa'));
+```
+
 </details>
 
 ### Example test cases:
 
-<i>mmmmaa = 4m2a</i><br>
-<i>wwooow = 2w3o1w</i>
+```
+mmmmaa = 4m2a
+wwooow = 2w3o1w
+```
