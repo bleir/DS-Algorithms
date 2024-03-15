@@ -6,19 +6,24 @@ Using the JavaScript language, have the function ArrayAdditionI(arr) take the ar
 
 <details>
 <summary>Solution</summary>
-<br>
-<code>function ArrayAddition(arr) {
-  const biggestNumber = arr.sort((a,b) => a - b)[arr.length-1];
-  const restElements = arr.splice(0, arr.length - 1);
-  <br>  
-  return restElements.reduce((acc, item) => acc + item, 0) === biggestNumber;
-}
-<br><br>
-console.log(ArrayAddition([1, 3, 8, 5, 17]));</code>
+
+```
+  function ArrayAddition(arr) {
+    const biggestNumber = arr.sort((a,b) => a - b)[arr.length-1];
+    const restElements = arr.splice(0, arr.length - 1);
+    
+    return restElements.reduce((acc, item) => acc + item, 0) === biggestNumber;
+  }
+
+console.log(ArrayAddition([1, 3, 8, 5, 17]));
+```
 </details>
+
+
 
 ### Example test cases:
 
-
-<i>[1, 3, 8, 5, 17] = true</i><br>
-<i>[4, 8, 22, 2, 3] = false</i>
+```
+[1, 3, 8, 5, 17] = true<br>
+[4, 8, 22, 2, 3] = false
+```
